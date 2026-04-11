@@ -1,16 +1,22 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+<main class="layout-minimalista">
+    @Body
+</main>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+<style>
+    /* Estilo global em Dark Mode */
+    body {
+        margin: 0;
+        background-color: #121212; /* Fundo escuro profundo */
+        color: #e2e8f0; /* Texto claro suave (off-white) para não ofuscar */
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .layout-minimalista {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1rem;
+    }
+</style>
