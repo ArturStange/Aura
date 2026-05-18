@@ -2,6 +2,8 @@
 
 [![CI Pipeline](https://github.com/SEU-USUARIO/Aura/actions/workflows/ci.yml/badge.svg)](https://github.com/SEU-USUARIO/Aura/actions)
 
+🌍 **Link da Aplicação Publicada (Deploy):** [Clique aqui para acessar](https://seuprojeto.azurewebsites.net)
+
 ## 📌 Problema Real
 A maioria das ferramentas de produtividade e listas de tarefas do mercado foca na gestão de *tempo*. Para pessoas neurodivergentes (como indivíduos com TDAH ou no espectro autista) e pessoas com fadiga crônica, o maior desafio não é o tempo, mas a **carga cognitiva e a energia mental**. Aplicativos complexos com excesso de menus, cores e urgências causam sobrecarga visual e paralisia executiva, piorando a rotina ao invés de ajudar.
 
@@ -58,6 +60,12 @@ Para rodar a ferramenta de qualidade estática (Linting):
 Esta ferramenta verifica se a formatação e a estrutura do código estão nos padrões profissionais exigidos.
 
     dotnet format --verify-no-changes
+
+## Como executar localmente
+1. Faça o clone do repositório.
+2. Rode `dotnet restore` e `dotnet build`.
+3. Rode `dotnet run`.
+4. Acesse `http://localhost:5000`.
 
 ## 🏷️ Versionamento Semântico
 
